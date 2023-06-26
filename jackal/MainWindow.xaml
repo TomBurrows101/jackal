@@ -16,26 +16,55 @@
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="200"/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="720"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="75"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
             
             <TextBlock Text="Jackal"
-                   VerticalAlignment="Center"
+                   VerticalAlignment="Top"
                    HorizontalAlignment="Center"
+                   Margin="0,15,0,0"
                    Foreground="White"
                    FontSize="22"/>
-            <StackPanel Grid.Row="1">
+            <StackPanel Margin="0,59,0,0">
                 <RadioButton Content="Home"
                              Height="50"
                              Foreground="White"
-                             FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"
+                             FontSize="16"
+                             Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked"
+                             />
+                <RadioButton Content="Videos"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="16"
+                             Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked"
+                             />
+                <RadioButton Content="Analysis"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="16"
+                             Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked"
+                             />
+                <RadioButton Content="Settings"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="16"
+                             Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked"
                              />
             </StackPanel>
+            <Grid Grid.Column="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+            </Grid>
         </Grid>
         
     </Border>
